@@ -13,5 +13,15 @@ An automated part unlocker for From The Depths.
 # Caveats
 
 * Purists will tell you that you're a pussy who can't play the game.  This is normal and expected behavior.
-* This is intended for use on Windows.  It's not guaranteed to work on Linux.  In fact, it probably won't.
+* This is intended for use on Windows.  It's not guaranteed to work on Linux or Mac.  In fact, it probably won't.  OSX is guaranteed to NOT work, as it is OSX's nature to be edgy and non-conformist, man.
 * Updates that change the structure of Persistent Instance Storage or mission data may cause this to break.  Already-hacked saves should be okay, but are not guaranteed to work.
+
+# License
+
+Read the [LICENSE](LICENSE), nerd.
+
+# Support
+
+Add bug reports that are descriptive (AKA not consisting of just "THIS SHIT IS BROKEN") and I may read and fix them, time permitting.
+
+Hand-holding is not provided.
