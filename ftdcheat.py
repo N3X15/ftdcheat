@@ -25,7 +25,6 @@ import os
 import sys
 import argparse
 import shutil
-
 import json
 
 # Persistent Instance Storage template.
@@ -217,7 +216,7 @@ if __name__ == '__main__':
       # ID must be the same as the mission attempted
       instance['Header']['Id']['Id'] = mission['Header']['Id']['Id']
       instance['PlayerSetup']['SpawnPointSelection']['Id'] = factionData['Players']['SpawnPoints'][0]['Id']['Id']
-      print(repr(instance.keys()))
+      #print(repr(instance.keys()))
       instance['PriorPerformance']['Completed'] = True  # The important part!
       instance['PriorPerformance']['Playthroughs'] = 1  # Just to be sure
       # Load forces
@@ -241,6 +240,7 @@ if __name__ == '__main__':
           iforce['Usage'] = 0  # honk
           instance['ForceUsageList'].append(iforce)
       newInstances[instance['Header']['Id']['Id']] = instance
+      print('>>> Generated "completed" mission instance: {!r}'.format(mission['Header']['Name']))
 
   InstanceStorage = {'PersistentInfoStore': []}
   foundInstance = {}
